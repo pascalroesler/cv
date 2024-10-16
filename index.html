@@ -24,14 +24,43 @@
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="assets/css/shine.css">
 	
-	<!-- Custom Styles for Profile Picture -->
+	<!-- Custom Styles for Profile Picture and Header -->
 	<style>
 		.resume-profile-pic {
-		    width: 200px; /* Adjust size as needed */
-		    height: 200px; /* Ensure circular shape */
-		    border-radius: 50%; /* Make the image circular */
-		    object-fit: cover; /* Ensure it fills the container */
-		    margin-bottom: 20px; /* Add some space below */
+		    width: 150px; /* Smaller profile picture */
+		    height: 150px; /* Ensure circular shape */
+		    border-radius: 50%; /* Circular image */
+		    object-fit: cover; /* Ensure no image distortion */
+		    margin-bottom: 15px; /* Add space below the image */
+		    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+		}
+
+		/* Center and adjust the header content */
+		.resume-header {
+		    text-align: center; /* Center the entire header */
+		    padding: 20px 0; /* Add space above and below */
+		}
+
+		/* Adjust contact section */
+		.resume-contact {
+		    margin-top: 10px; /* Space between contact and the role/title */
+		}
+
+		/* Center the contact details */
+		.resume-contact-list {
+		    display: flex;
+		    justify-content: center; /* Center the contact details */
+		    gap: 20px; /* Add space between items */
+		}
+
+		.resume-name {
+		    font-size: 2.5rem; /* Make the name more prominent */
+		}
+
+		.resume-role-title {
+		    font-size: 1.2rem; /* Slightly smaller role title */
+		    font-weight: 500;
+		    color: #666; /* Subtle color for the role */
 		}
 	</style>
 
