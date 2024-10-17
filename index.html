@@ -24,30 +24,22 @@
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="assets/css/shine.css">
 
-	<!-- Custom Styles -->
 	<style>
-		/* Styling the profile image */
+		/* Custom adjustments */
 		.resume-profile-pic {
-			width: 260px;
-			height: 260px;
-			border-radius: 10px; 
-			object-fit: cover;
-			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-			border: 4px solid #f1f1f1; 
-			position: absolute; /* Make it floating */
-			top: -130px; /* Adjust positioning above the "Key Expertise" */
-			left: 50%; /* Center the image */
-			transform: translateX(-50%); /* Center the image */
-			z-index: 10; /* Make sure it stays on top */
+		    width: 260px;
+		    height: 350px; /* Höhe anpassen für rechteckiges Bild */
+		    border-radius: 10px; /* Leicht abgerundete Ecken */
+		    object-fit: cover;
+		    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+		    border: 4px solid #f1f1f1;
+		    position: absolute;
+		    top: -130px; /* Höhe anpassen, um das Bild korrekt zu positionieren */
+		    left: 50%;
+		    transform: translateX(-50%);
+		    z-index: 10;
 		}
 
-		.resume-header {
-			text-align: center;
-			margin-top: 150px; /* Make room for the floating image */
-			padding: 30px 0;
-		}
-
-		/* Styling the name and role */
 		.resume-name {
 			font-size: 30px;
 		}
@@ -57,25 +49,33 @@
 			font-weight: 600;
 		}
 
-		/* Positioning for Key Expertise */
-		.resume-skills-section {
-			margin-top: 180px; /* Space out the content below the floating image */
+		.resume-header {
+			padding: 30px 0;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.top-bar-inner {
+			margin-bottom: 10px;
 		}
 
 		/* Media query for responsiveness */
 		@media (max-width: 1200px) {
-			.resume-profile-pic {
-				width: 220px;
-				height: 220px;
-				top: -110px; /* Adjust for smaller screens */
-			}
-
 			.resume-name {
 				font-size: 26px;
 			}
 
 			.resume-role-title {
 				font-size: 16px;
+			}
+
+			.resume-profile-pic {
+				width: 220px;
+				height: 220px;
+			}
+
+			.resume-contact-list li {
+				margin-bottom: 10px;
 			}
 		}
 	</style>
@@ -99,79 +99,212 @@
 		
 				<div class="resume-wrapper mx-auto rounded-2">
 					<div class="resume-header px-4 px-lg-5">
-						<img class="resume-profile-pic" src="assets/images/profile.jpg" alt="Pascal's image">
-						<h2 class="resume-name text-uppercase">Pascal Rösler</h2>
-						<div class="resume-role-title text-uppercase">Cloud FinOps Expert</div>
-						<div class="resume-contact mt-4">
-							<ul class="resume-contact-list list-unstyled list-inline mb-0 justify-content-between">
-								<li class="list-inline-item me-md-3 me-lg-5"><i class="resume-contact-icon bi bi-telephone-inbound me-2"></i> +49 1515 0041296</li>
-								<li class="list-inline-item me-md-3 me-lg-5"><i class="resume-contact-icon bi bi-envelope me-2"></i> mail@pascalroesler.com</li>
-								<li class="list-inline-item me-lg-5"><i class="resume-contact-icon bi bi-globe me-2"></i> https://medium.com/@pascalroesler</li>
-							</ul>
+						<div class="resume-profile-holder text-center">
+							<img class="resume-profile-pic" src="assets/images/profile.jpg" alt="Pascal's image"><p></p>
+							<h2> class="resume-name text-uppercase">Pascal Rösler</h2>
+							<div class="resume-role-title text-uppercase">Cloud FinOps Expert</div>
+							<div class="resume-contact mt-4">
+								<ul class="resume-contact-list list-unstyled list-inline mb-0 justify-content-between">
+									<li class="list-inline-item me-md-3 me-lg-5"><i class="resume-contact-icon bi bi-telephone-inbound me-2"></i> +49 1515 0041296</li>
+									<li class="list-inline-item me-md-3 me-lg-5"><i class="resume-contact-icon bi bi-envelope me-2"></i> mail@pascalroesler.com</li>
+									<li class="list-inline-item me-lg-5"><i class="resume-contact-icon bi bi-globe me-2"></i> https://medium.com/@pascalroesler</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-
+					
 					<div class="resume-body p-4 p-lg-5">
 						<div class="row">
 							<div class="col-main col-12 col-lg-8 pe-lg-4">
 								<section class="resume-summary-section resume-section">
 									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-2 py-lg-3"><i class="resume-section-heading-icon bi bi-person me-2"></i>About Me</h3>
 									<div class="resume-summary-desc">
-										<p>I am a dynamic and results-driven person with a passion for driving digital transformation through innovative cloud solutions...</p>
-									</div>
-								</section>
+										<p>I am a dynamic and results-driven person with a passion for driving digital transformation through innovative cloud solutions. Throughout my career, I have partnered with some of the world's leading organizations, helping them optimize their cloud strategies, reduce operational costs, and implement cutting-edge technologies such as AI and GPT models. My strength lies in my ability to bridge the gap between technology and business, ensuring that my clients achieve their strategic objectives while staying ahead of industry trends.</p>
+										
+										<p>With deep expertise in cloud infrastructure architecture, FinOps, and relationship management, I excel at identifying business opportunities, developing tailored account plans, and maintaining long-term client relationships. I am known for my hands-on approach, attention to detail, and ability to lead cross-functional teams in delivering impactful solutions that transform businesses.</p>
+										
+										<p>I have successfully led high-impact projects while mentoring teams, and I am recognized for delivering cross-hyperscaler applications for centralized budgeting, optimizing a total cloud spend of over 135 million dollars annually for top-tier clients. My experience includes working closely with C-level executives, contributing to Cloud Governance Boards, and leveraging emerging technologies to drive business transformation. In addition, I have a proven track record of guiding clients across the public sector, telecommunications, and energy industries through their digital transformation journeys.</p>
 
+										<p>This role would provide the perfect opportunity for me to apply my expertise in helping within the relevant sectors to embrace innovation and excel in their digital transformation efforts.</p>
+									</div>
+								</section><!--//resume-summary-section-->								
 								<section class="resume-core-competencies-section resume-section">
 									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3"><i class="resume-section-heading-icon bi bi-check-circle me-2"></i>Core Competencies</h3>
 									<ul class="list-unstyled">
-										<li><strong>Account Management & Strategic Planning</strong>: Proven track record of developing and implementing strategic account plans for Fortune 500 clients...</li>
-										<li><strong>Cloud Infrastructure & Emerging Technologies</strong>: Expertise in designing and deploying cloud infrastructure across Azure, AWS, and GCP...</li>
+										<li><strong>Account Management & Strategic Planning</strong>: Proven track record of developing and implementing strategic account plans for Fortune 500 clients, ensuring the alignment of technical solutions with business goals and driving revenue growth. Skilled at managing key accounts, particularly in the public sector, telecommunications, and energy industries.</li<p></p>
+										<li><strong>Cloud Infrastructure & Emerging Technologies</strong>: Expertise in designing and deploying cloud infrastructure across Azure, AWS, and GCP, with a focus on FinOps, AI integration, and automation to optimize processes and drive innovation.</li><p></p>
+										<li><strong>Client Relationship Management</strong>: Extensive experience in building and nurturing relationships with C-level executives, ensuring the successful delivery of projects and aligning technology roadmaps with business objectives. Adept at maintaining long-term partnerships and fostering opportunities for upselling and cross-selling.</li><p></p>
+										<li><strong>Sales & Networking</strong>: Strong ability to identify new business opportunities, build networks within the industry, and lead negotiation processes that result in successful deal closures. Skilled in developing strategies that expand client portfolios and drive long-term business growth.</li><p></p>
+										<li><strong>Project Leadership & Team Management</strong>: Demonstrated leadership in managing onshore and offshore teams in agile environments, leading high-impact projects from ideation to implementation. Expertise in overseeing sprint planning, retrospectives, and reviews to ensure timely delivery and alignment with client expectations.</li><p></p>
+										<li><strong>Emerging Technologies & Innovation</strong>: Proficient in leveraging AI and GPT models to drive cost optimization and improve business processes. Skilled at integrating these technologies into client solutions, positioning them as competitive advantages for long-term growth.</li><p></p>
+										<li><strong>Data Analytics & Automation</strong>: Skilled in developing cost optimization tools using Python, Power BI, and cross-hyperscaler data analysis. Expertise in automating financial reporting and providing insights that help clients make informed strategic decisions.</li><p></p>
 									</ul>
-								</section>
+								</section><!--//resume-core-competencies-section-->
+								
+								<hr>
+								
+								<section class="resume-experience-section resume-section">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-briefcase me-2"></i>Work Experience</h3>
+									<div class="resume-timeline position-relative">
+									    <article class="resume-timeline-item position-relative pb-5">
+										    <div class="resume-timeline-item-header mb-2">
+											    <div class="resume-position-meta d-flex justify-content-between mb-1">
+												    <div class="resume-position-time">Dec. 2021 - Present</div>
+												    <div class="resume-company-name">Capgemini, Düsseldorf</div>
+											    </div>
+										        <h3 class="resume-position-title mb-1">Solution Architect</h3>
+										    </div>
+										    <div class="resume-timeline-item-desc">
+											    <ul class="resume-timeline-list">
+												    <li>Led the development of strategic account plans for key public sector and enterprise clients, driving cloud adoption and aligning FinOps strategies with business goals.</li>
+												    <li>Collaborated closely with C-level executives to identify new opportunities for AI and GPT model integration, resulting in significant cost savings and business process improvements.</li>
+												    <li>Played a pivotal role in contributing to cloud governance meetings, providing insights that helped shape the long-term technology roadmaps of enterprise clients with over $135 million in annual cloud consumption.</li>
+												    <li>Managed cross-functional teams to deliver high-impact projects across Azure, AWS, and GCP environments, ensuring timely delivery and client satisfaction.</li>
+											    </ul>
+										    </div>
+									    </article>
+
+									    <article class="resume-timeline-item position-relative pb-5">
+										    <div class="resume-timeline-item-header mb-2">
+											    <div class="resume-position-meta d-flex justify-content-between mb-1">
+												    <div class="resume-position-time">Sept. 2019 - Nov. 2021</div>
+												    <div class="resume-company-name">tegos Group, Dortmund</div>
+											    </div>
+										        <h3 class="resume-position-title mb-1">Cloud Consultant - Cloud Solutions</h3>
+										    </div>
+										    <div class="resume-timeline-item-desc">
+											    <ul class="resume-timeline-list">
+												    <li>Developed and maintained long-term relationships with telecommunications and energy clients, focusing on cloud migration projects and operational efficiency improvements.</li>
+												    <li>Oversaw the migration of MS Dynamics NAV solutions to Azure, enhancing scalability and reducing costs for enterprise clients.</li>
+												    <li>Successfully led sales efforts that resulted in the acquisition of new clients and expanded service offerings within the cloud architecture and FinOps domains.</li>
+												    <li>Acted as the primary point of contact for client engagements, ensuring alignment between cloud solutions and business strategies.</li>
+											    </ul>
+										    </div>
+									    </article>
+									    
+									    <article class="resume-timeline-item position-relative pb-5">
+										    <div class="resume-timeline-item-header mb-2">
+											    <div class="resume-position-meta d-flex justify-content-between mb-1">
+												    <div class="resume-position-time">May 2018 - Nov. 2021</div>
+												    <div class="resume-company-name">Xor-Solutions, Dortmund</div>
+											    </div>
+										        <h3 class="resume-position-title mb-1">Founder & Web Developer</h3>
+										    </div>
+										    <div class="resume-timeline-item-desc">
+											    <ul class="resume-timeline-list">
+												    <li>Founded a full-service web agency focused on high-traffic web applications, SEO, and multilingual content creation for international clients.</li>
+												    <li>Delivered customized web solutions using platforms such as WordPress and Shopify, with a focus on user experience and search engine optimization.</li>
+											    </ul>
+										    </div>
+									    </article>
+						            </div><!--//resume-timeline-->
+								</section><!--//resume-experience-section-->
+							</div><!--//col-8-->
+							
+							<div class="col-12 col-lg-4 ps-lg-4">
+								<section class="resume-skills-section resume-section">
+									
+									<p></p>
+									
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-gear me-2"></i>Key Expertise</h3>
+									
+									<img class="resume-profile-pic" src="assets/images/profile.jpg" alt="Pascal's image"><p></p>
+									
+									<p></p>
+									
+									<ul class="list-unstyled">
+									    <li class="mb-2">
+									        <div class="resume-skill-name">Account Management & Strategic Planning</div>
+											<div class="progress resume-progress" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+											  <div class="progress-bar resume-progress-bar" style="width: 95%"></div>
+											</div>
+									    </li>
+									    <li class="mb-2">
+									        <div class="resume-skill-name">Cloud Infrastructure & Emerging Technologies</div>
+									        <div class="progress resume-progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+											  <div class="progress-bar resume-progress-bar" style="width: 90%"></div>
+											</div>
+									    </li>
+									    <li class="mb-2">
+									        <div class="resume-skill-name">Client Relationship Management</div>
+											<div class="progress resume-progress" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+											  <div class="progress-bar resume-progress-bar" style="width: 92%"></div>
+											</div>
+									    </li>
+									    <li class="mb-2">
+									        <div class="resume-skill-name">Project Leadership & Team Management</div>
+											<div class="progress resume-progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+											  <div class="progress-bar resume-progress-bar" style="width: 85%"></div>
+											</div>
+									    </li>
+									    <li class="mb-2">
+									        <div class="resume-skill-name">Sales & Networking</div>
+											<div class="progress resume-progress" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100">
+											  <div class="progress-bar resume-progress-bar" style="width: 91%"></div>
+											</div>
+									    </li>
+								    </ul>
+								</section><!--//resume-skills-section-->								<hr>
+									
+								<section class="resume-skills-section resume-section">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-person-gear me-2"></i>Soft Skills</h3>
+										<ul class="list-inline">
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Leadership</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Project Management</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">DevOps/FinOps</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Public Speaking</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Client Engagement</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Negotiation</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Agile Leadership</span></li>
+										</ul>
+								</section><!--//resume-section-->
 
 								<hr>
 
-								<section class="resume-experience-section resume-section">
-									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-briefcase me-2"></i>Work Experience</h3>
-									<!-- Experience details -->
-								</section>
-							</div>
-
-							<div class="col-12 col-lg-4 ps-lg-4">
-								<section class="resume-skills-section resume-section">
-									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-gear me-2"></i>Key Expertise</h3>
-									<ul class="list-unstyled">
-										<li class="mb-2">
-											<div class="resume-skill-name">Account Management & Strategic Planning</div>
-											<div class="progress resume-progress" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-												<div class="progress-bar resume-progress-bar" style="width: 95%"></div>
-											</div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">Cloud Infrastructure & Emerging Technologies</div>
-											<div class="progress resume-progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-												<div class="progress-bar resume-progress-bar" style="width: 90%"></div>
-											</div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">Client Relationship Management</div>
-											<div class="progress resume-progress" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-												<div class="progress-bar resume-progress-bar" style="width: 92%"></div>
-											</div>
-										</li>
+								<section class="resume-tech-skills-section resume-section">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3"><i class="resume-section-heading-icon bi bi-code me-2"></i>Tech Skills</h3>
+									
+									<ul class="resume-timeline-list">
+									    <li><strong>Python</strong></li>
+									    <li><strong>Power BI</strong></li>
+									    <li><strong>Azure, AWS, GCP</strong></li>
+									    <li><strong>Automation (FinOps)</strong></li>
 									</ul>
-								</section>
-							</div>
-						</div>
-				    </div>
-			    </div>
-			</div>
-		</div>
-	</div>
+								</section><!--//resume-tech-skills-section-->
+								
+								<hr>
 
-	<footer class="footer text-center py-4">
-		<small class="copyright">Designed with <span class="sr-only">love</span><i class="bi bi-heart-fill" style="color:#fe655c"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-	</footer>
+								<section class="resume-educate-section resume-section">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3"><i class="resume-section-heading-icon bi bi-book me-2"></i>Certifications</h3>
+									
+									<ul class="resume-timeline-list">
+											<li><strong>SAFEe 6 Agilist</strong></li>
+											<li><strong>FinOps FOCUS Analyst</strong></li>
+											<li><strong>FinOps Practitioner</strong></li>
+											<li><strong>GenAI Essentials (AWS)</strong></li>
+											<li><strong>Microsoft AZ-900</strong></li>
+											<li><strong>L0/L1 Capgemini Architect0</strong></li>
+									</ul>
+								</section><!--//resume-section-->
+							</div><!--//col-side-->
+							
+						</div><!--//row-->
+				    </div><!--//resume-body-->
+			    </div><!--//resume-wrapper-->
+			</div><!--//container-fluid-->
+		</div><!--//main-content-wrapper-->
+		
+		
+	</div><!--//row-->
+
+</div><!--//container-->
+
+<footer class="footer text-center py-4">
+	<small class="copyright">Designed with <span class="sr-only">love</span><i class="bi bi-heart-fill" style="color:#fe655c"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+</footer>
 
 </body>
 </html>
+
+
+								
